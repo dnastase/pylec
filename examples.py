@@ -8,6 +8,13 @@ s1 = s + "another"
 
 print(n, f s)
 
+if condition1:
+   body1
+elif condition2:
+   body2
+else:
+   bodyN
+ 
 if n > 2: print ">2" 
 elif n < 2: print "<2"
 else: print "=2"
@@ -17,4 +24,5 @@ l[1]
 
 for e in l: print e
 
-
+def fun():
+   pass
