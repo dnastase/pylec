@@ -32,3 +32,10 @@ inputFile = args[2]   #this is the file to search into
 
 grep(string, inputFile, options.ignore_case)
 
+grep("hero", "novel.txt")
+grep("hero", "novel.txt", False)
+grep("hero", "novel.txt", True)
+grep(inputFile="novel.txt", string="hero")
+grep(inputFile="novel.txt", string="hero", True)
+grep(string="hero", inputFile="novel.txt", ignoreCase=True)
+
