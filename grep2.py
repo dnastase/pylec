@@ -10,10 +10,11 @@ cmdLineParser = optparse.OptionParser()
 #cmdLineParser.add_option("-d", action="store", type="string", dest="date", default=datetime.datetime.today().strftime("%Y%m%d"), help="(YYMMDD) The date for which you want the stats. Default is today")
 cmdLineParser.add_option("-i", action="store_true", dest="ignore_case", default = False, help = "ignore case")
 
+#parse the command line arguments
 (options, args) = cmdLineParser.parse_args(sys.argv)
 
-string = args[1]
-inputFile = args[2]
+string = args[1]      #this is the string to search for
+inputFile = args[2]   #this is the file to search into
 
 for line in open(inputFile).readlines():
    line = line.rstrip("\n")
@@ -25,5 +26,5 @@ for line in open(inputFile).readlines():
       print(line) 
       LOG("matched case insensitive %s in line %s" % (string, line))
    else:
-      LOG("not match for %s in line %s" % (string, line))
+      LOG("no match for %s in line %s" % (string, line))
 
