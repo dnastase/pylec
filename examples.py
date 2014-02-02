@@ -40,14 +40,41 @@ l
 l.sort()
 l
 
-#removing
 del l[3:5]
 l
-
 for e in l: print e
 
-def fun():
+d={'john': 12, 'mary': 34, 'brad':56}
+d
+d=dict(john=12, mary=34, brad=56)
+d
+
+d['ana']=78
+d
+d.update({'steve':90})
+d
+
+del d['ana']
+d
+d.pop('steve')
+d
+
+'mary' in d
+
+
+for key in d.key():
    pass
+
+for val in d.values():
+   pass
+
+for (key, val) in d.items()
+   pass
+
+
+def mysum(l):
+    theSum = reduce(lambda x,y: x+y, l)   
+    return theSum
 
 
 if condition1:

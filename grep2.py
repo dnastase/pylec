@@ -24,7 +24,7 @@ for line in open(inputFile).readlines():
       LOG("matched with case %s in line %s" % (string, line))
    elif options.ignore_case and string.lower() in line.lower():
       print(line) 
-      LOG("matched case insensitive %s in line %s" % (string, line))
+      LOG("matched w/out case %s in line %s" % (string, line))
    else:
       LOG("no match for %s in line %s" % (string, line))
 
