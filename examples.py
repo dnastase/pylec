@@ -83,8 +83,8 @@ def mysum(l):
 
 
 import numpy
-numpy.median(l)
+m = numpy.median(l)
 
 from numpy import median
-median(l)
+m = median(l)
 
