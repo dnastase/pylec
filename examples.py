@@ -49,6 +49,17 @@ del l[3:5]
 l
 for e in l: print e
 
+done = False
+while not done:
+    cmd = raw_input("new command:")
+    if 'exit' in cmd:
+        done = True
+    elif 'show' in cmd:
+        DoShow()
+    elif 'assign' in cmd:
+        DoAssign()
+
+
 d={'john': 12, 'mary': 34, 'brad':56}
 d
 d=dict(john=12, mary=34, brad=56)
