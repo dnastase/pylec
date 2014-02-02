@@ -3,4 +3,5 @@
 import mystat
 
 print(mystat.mysum([10,20,30]))
+print(mystat.PI)
 
