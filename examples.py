@@ -102,4 +102,20 @@ m = median(l)
 
 
 import rpy2.robjects as robj
-
+>>> pi = robjects.r['pi']
+>>> pi[0]
+3.14159265358979
+robjects.r('''
+        f <- function(r, verbose=FALSE) {
+            if (verbose) {
+                cat("I am calling f().\n")
+            }
+            2 * pi * r
+        }
+        f(3)
+        ''')
+>>> letters = robjects.r['letters']
+>>> rcode = 'paste(%s, collapse="-")' %(letters.r_repr())
+>>> res = robjects.r(rcode)
+>>> print(res)
+"a-b-c-d-e-f-g-h-i-j-k-l-m-n-o-p-q-r-s-t-u-v-w-x-y-z"
