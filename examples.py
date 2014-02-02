@@ -105,7 +105,7 @@ import rpy2.robjects as robj
 >>> pi = robjects.r['pi']
 >>> pi[0]
 3.14159265358979
-robjects.r('''
+robj.r('''
         f <- function(r, verbose=FALSE) {
             if (verbose) {
                 cat("I am calling f().\n")
@@ -114,8 +114,8 @@ robjects.r('''
         }
         f(3)
         ''')
->>> letters = robjects.r['letters']
+>>> letters = robj.r['letters']
 >>> rcode = 'paste(%s, collapse="-")' %(letters.r_repr())
->>> res = robjects.r(rcode)
+>>> res = robj.r(rcode)
 >>> print(res)
 "a-b-c-d-e-f-g-h-i-j-k-l-m-n-o-p-q-r-s-t-u-v-w-x-y-z"
