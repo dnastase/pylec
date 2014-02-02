@@ -8,6 +8,11 @@ s1 = "another" + s
 
 print(n, f s)
 
+if n > 2: print ">2" 
+elif n < 2: print "<2"
+else: print "=2"
+
+
 # creating
 l = [2, 3.14, "py", n, f, s]
 l2 = list("abc")
@@ -77,14 +82,9 @@ def mysum(l):
     return theSum
 
 
-if condition1:
-   body1
-elif condition2:
-   body2
-else:
-   bodyN
- 
-if n > 2: print ">2" 
-elif n < 2: print "<2"
-else: print "=2"
+import numpy
+numpy.median(l)
+
+from numpy import median
+median(l)
 
