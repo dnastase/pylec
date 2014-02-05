@@ -1,16 +1,44 @@
 
+
+* Books
+
+
+** The Quick Python Book - Harms McDonald
+
 * Learning Python, 5th Edition - Lutz
 
-* http://en.wikibooks.org/wiki/Python_Programming
+** http://en.wikibooks.org/wiki/Python_Programming
 
 It's a free book, very hands down, example oriented.
 
-* Dive into Python 
+** Dive into Python 
 
-* Python Cookbook - Martelli & others
+** Python Cookbook - Martelli & others
 
 A lot of examples about using Python to achieve various and diverse things.
 
-* Programming Python  - Lutz
+** Programming Python  - Lutz
 
 This is the most comprehensive book about using Python (not the language itself), covering most of the standard libraries.
+
+
+* Internet
+
+
+** Python original documentation
+
+www.python.org/docs
+
+** IPython
+
+www.ipython.org
+
+** numpy/scipy
+
+http://docs.scipy.org/doc/numpy/reference/
+
+** rpy2 module
+
+http://rpy.sourceforge.net/rpy2.html
+
+
